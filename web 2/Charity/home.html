@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+            <span class="name">TomsBray</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Article.html">Article</a></li>
+                <li><a href="Fundraising.html">Fundraising</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="daftar.html">Daftar</a>
+            <a href="login.html">Masuk</a>
+        </div>
+    </header>
+
+    <section class="food-charity">
+        <h2>Food Charity</h2>
+        <p class="italic">Share the food
+        <br>with the Food Charity</p>
+        
+        <button onclick="">Donate Now</button>
+    </section>
+    <script>
+        // Cek apakah pengguna sudah login saat halaman dimuat
+        var isLoggedIn = localStorage.getItem('isLoggedIn');
+        if (!isLoggedIn) {
+            // Jika belum login, redirect ke halaman login
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

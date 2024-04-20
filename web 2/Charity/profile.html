@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Foto Profil</title>
+  <!-- Tambahkan link untuk mengambil ikon dari Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      max-width: 750px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 85px;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 120px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      position: relative;
+
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .profile-pic {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background-color: #ccc;
+      cursor: pointer;
+    }
+
+    .profile-pic {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .edit-icon {
+      position: absolute;
+      top: 10%;
+      right: 42%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: #ccc;
+      color: #007bff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-save {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .btn-save:hover {
+      background-color: #0056b3;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .container {
+        padding: 50px;
+      }
+
+      h1 {
+        margin-bottom: 80px;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+      }
+
+      .edit-icon {
+        right: 40%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .container {
+        padding: 30px;
+      }
+
+      h1 {
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+
+      .edit-icon {
+        right: 35%;
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+      .container {
+        padding: 30px;
+      }
+
+      h1 {
+        margin-bottom: 60px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+
+      .edit-icon {
+        right: 35%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>HELLO , ABDULL!</h1>
+  <div class="container">
+    <!-- Elemen gambar -->
+    <label for="profile-pic" class="profile-pic" id="profile-pic"></label>
+
+    <i class="fas fa-pen edit-icon" id="edit-icon"></i>
+
+    <input type="file" id="profile-pic-input" style="display: none;">
+    <h2>Personal Information</h2>
+    <form id="edit-form">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Country of Residence:</label>
+        <input type="text" id="country" name="country" placeholder="Enter your country of residence" required>
+      </div>
+      <button type="submit" class="btn-save">Save Profile</button>
+    </form>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById('profile-pic-input');
+    const imagePreview = document.getElementById('profile-pic');
+    const editIcon = document.getElementById('edit-icon');
+
+    imagePreview.addEventListener('click', function () {
+      fileInput.click();
+    });
+
+    editIcon.addEventListener('click', function () {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', function () {
+      if (this.files && this.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          imagePreview.style.backgroundImage = `url('${e.target.result}')`;
+          imagePreview.style.backgroundSize = 'cover';
+        }
+        reader.readAsDataURL(this.files[0]);
+      }
+    });
+
+    const form = document.getElementById('edit-form');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const country = document.getElementById('country').value;
+
+      console.log("First Name:", firstName);
+      console.log("Last Name:", lastName);
+      console.log("Email:", email);
+      console.log("Country:", country);
+
+
+      alert("Profile saved successfully!");
+    });
+  </script>
+
+
+</body>
+
+</html>

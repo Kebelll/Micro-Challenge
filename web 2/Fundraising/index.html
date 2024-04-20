@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundraising</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        :root {
+
+            --main-color: #000;
+            --text-color: #fff;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 28px 12%;
+            transition: all 0.5s ease;
+            background-color: transparent;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 15% auto 0;
+            padding: 0 20px;
+            margin-left: 19%;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: url('background.jpg');
+            background-size: contain;
+            background-position: center;
+        }
+
+        .navbar {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001;
+        }
+
+        h3 {
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            margin-left: 90px;
+        }
+
+        img {
+            width: 70px;
+            height: 50px;
+            position: fixed;
+            display: flex;
+            margin-left: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        button {
+            border-radius: 20px;
+        }
+
+        .navbar a {
+            color: #ccc;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 5px 0;
+            margin: 0px 30px;
+            transition: all 0.5s ease;
+            text-align: left;
+        }
+
+        .navbar a:hover {
+            color: var(--main-color);
+        }
+
+        .navbar a:active {
+            color: var(--main-color);
+        }
+
+        .navbar-fixed {
+            background-color: #fff;
+        }
+
+
+        .primary a {
+            margin-right: 25px;
+            margin-left: 10px;
+            color: varvar(--text-color);
+            font-weight: 500;
+            transition: all 0.5s ease;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+        }
+
+        .user i {
+            color: var(--main-color);
+            font-size: 28px;
+            margin-right: 7px;
+        }
+
+        .primary a:hover {
+            color: var(--main-color);
+        }
+
+        #login {
+            display: none;
+        }
+
+        /* Judul */
+        .rice-content {
+            text-align: left;
+            color: white;
+        }
+
+        .rice-for-all {
+            font-weight: bold;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .rice-for-all-description {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        .btn-donate {
+            background-color: #ccc;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-donate:hover {
+            background-color: white;
+        }
+
+        .learn-more {
+            color: #ccc;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            font-size: 25px;
+        }
+
+        .social-icons i {
+            margin-right: 15px;
+        }
+
+        .arrows {
+            margin-left: 70%;
+        }
+
+        .arrow-link {
+            font-size: 25px;
+            color: #000;
+            text-decoration: none;
+            margin: 0 20px;
+            cursor: pointer;
+            border-radius: 0;
+        }
+
+        .arrow-link:hover {
+            color: wheat;
+        }
+
+        .social-line {
+            border: 1px solid white;
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .donate-section {
+            padding: 50px;
+            margin-top: 10%;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .donate-title {
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 10%;
+            margin-top: 5%;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            padding: 10px;
+        }
+
+        .card {
+            position: relative;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #478ecd, #c4dce9);
+            transition: transform 0.3s ease;
+            margin-bottom: 20%;
+            overflow: hidden;
+            width: 300px;
+            height: 400px;
+            margin-left: 19%;
+        }
+
+        .card .card-image {
+            position: absolute;
+            top: 52%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 0 50% 0 50%;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-top: 2%;
+            font-size: 20px;
+            text-align: left;
+            float: left;
+            margin-left: 4px;
+        }
+
+        .card-description {
+            margin-bottom: 75%;
+            text-align: left;
+            float: left;
+        }
+
+
+        .card-price {
+            font-weight: bold;
+            margin-bottom: 0%;
+        }
+
+        .btn-donate-now {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 50px;
+            margin-top: 5%;
+        }
+
+        .btn-donate-now:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #dde1f3;
+            color: black;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+
+        .footer-logo {
+            width: 70px;
+            height: 50px;
+            margin-right: 20px;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 2;
+        }
+
+
+        .social-icon {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 30px;
+            margin-top: 14%;
+            font-size: large;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            color: cornsilk;
+        }
+
+        /* CSS untuk ikon dalam lingkaran dengan latar belakang abu-abu */
+        .social-icon a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #999;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icon a:hover {
+            background-color: #ccc;
+        }
+
+        .bi {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Logo.png" alt="" />
+        <h3>Tomsbray</h3>
+        <ul class="navbar">
+            <li id="login">
+                <a href="#" class="user"><i class="ri-user-line"></i>Abdul(Profile)</a>
+            </li>
+            <li><a href="../AboutUs/index.html" class="active">AboutUs</a></li>
+            <li><a href="../article/index.html">Article</a></li>
+            <li><a href="../Fundraising/index.html">Fundraising</a></li>
+        </ul>
+        <div class="primary">
+            <button class="btn-login">
+                <a href="../Hompage-After/index.html" class="user"><i class="ri-user-line"></i>Abdul</a>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="rice-content">
+            <div class="rice-for-all">Rice for All</div>
+            <p class="rice-for-all-description">
+                Penjelasan mengenai program "Rice for All" dapat ditulis di sini.
+                <br>Penjelasan mengenai program "Rice for All" dapat ditulis di sini.
+                <br>Penjelasan mengenai program "Rice for All" dapat ditulis di sini.
+            </p>
+            <button class="btn-donate">Donate Now</button>
+            <a href="#" class="learn-more">Learn More <i class="ri-arrow-right-line"></i></a>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-twitter"></i>
+                <div class="arrows">
+                    <button class="arrow-link">&lt;</button>
+                    <button class="arrow-link">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="social-line">
+
+    <div class="donate-section">
+        <h2 class="donate-title">Choose Where to Donate</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Tanah Abang</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate1.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Kampung Melayu</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate2.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Koja</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate3.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Cilincing</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate4.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Tanjung Priok</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate5.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Tambora</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate6.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h3 class="card-title">Kebon Jeruk</h3>
+                    <p class="card-description">Description of the donation goes here.</p>
+                    <img src="donate7.jpg" alt="Donation Image1" class="card-image">
+                    <p class="card-price">$50</p>
+                    <button class="btn-donate-now">Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="logo-bawah">
+                    <img src="Logo.png" alt="Logo" class="footer-logo" />
+                    <h3 style="font-size: x-large;">Tomsbray</h3>
+                </div>
+                <div class="social-icon">
+                    <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" title="Twiter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+                </div>
+                <p class="footer-description">
+                    Organisasi fiktif yang <br> berdedikasi untuk membantu masyarakat.
+                </p>
+            </div>
+            <div class="footer-section" style="margin-left: 40px;">
+                <h3 style="padding-left: 10px;">Get Involvet</h3>
+                <ul>
+                    <li><a href="../AboutUs/index.html">AboutUs</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="../Fundraising/index.html">Fundraiser</a></li>
+                    <li><a href="#">Project</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="padding-left: 10px;">Learn More</h3>
+                <ul>
+                    <li><a href="../article/index.html">Aricle</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="padding-left: 10px;">Contact</h3>
+                <p>123 Jalan Fiktif, Jakarta, Indonesia</p>
+                <p>(021) 123-4567</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.querySelector("header").classList.add("navbar-fixed"); // Tambahkan kelas saat di-scroll
+            } else {
+                document.querySelector("header").classList.remove("navbar-fixed"); // Hapus kelas saat tidak di-scroll
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
