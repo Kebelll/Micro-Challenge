@@ -1,0 +1,1036 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+}
+
+.progress-bar {
+  background: linear-gradient(to right, #E3E8FF 0%, #405FE0 50%, #405FE0 100%);
+}
+.card-img-top{
+  border-radius: 20px;
+  height: 394px !important;
+  width: 591px !important;
+  position: relative;
+  left: 10px;
+  top: -150px;
+  object-fit: cover;
+}
+.card{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px !important;
+  border-radius: 20px;
+  height: 413.56px !important;
+  width: 654.8px !important;
+
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.card-body{
+  margin-top: -50px;
+}
+.card1{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px !important;
+  border-radius: 20px;
+  height: 638.17px !important;
+  width: 580.04px !important;
+  background-color: #fff;
+  margin-left: 80px;
+
+}
+.card1:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card2{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 0px !important;
+  padding-top: 50px;
+  border-radius: 20px;
+  height: 703px !important;
+  width: 655px !important;
+  background-color: #fff;
+  margin-left: 0px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
+  line-height:50px ;
+}
+
+.card2:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+footer {
+  background-color: #dde1f3;
+  color: black;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-bawah {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 70px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 200px; /* adjust this value as needed */
+}
+
+.social-icons img {
+  width: 44px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: cornsilk;
+}
+
+.card3{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 20px !important;
+  border-radius: 20px;
+  height: 599px !important;
+  width: 556px !important;
+  background-color: #fff;
+  margin-right: 80px;
+  margin-left: 748px;
+}
+
+.card3:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.gambar_2{
+  height:  368px;
+  weight: 446px;
+}
+
+.bi{
+  font-size: 25px;
+}
+@media only screen and (max-width: 600px) {
+  .card-img-top{
+      
+      left: 48px !important;
+     
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --bg-color: rgb(186, 186, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 1) 0%,
+    rgba(155, 155, 155, 1) 16%,
+    rgba(217, 217, 217, 1) 52%
+  );
+  --main-color: #29fd53;
+  --text-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(186, 186, 186);
+  background: linear-gradient(
+    90deg,
+    rgba(186, 186, 186, 1) 0%,
+    rgba(155, 155, 155, 1) 16%,
+    rgba(217, 217, 217, 1) 52%
+  );
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-left: 90px;
+  font-weight: bold;
+}
+
+img {
+  width: 70px;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  margin-left: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border-radius: 20px;
+}
+
+.navbar {
+  display: flex;
+  margin-left: -190px;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+.navbar a:active {
+  color: var(--main-color);
+}
+
+.primary {
+  display: flex;
+  align-items: center;
+}
+
+.primary a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: varvar(--text-color);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+
+.primary a:hover {
+  color: var(--main-color);
+}
+
+#login {
+  display: none;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+/*section*/
+.main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url(img/tanganbaru.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dalam {
+  text-align: center;
+  max-width: 600px; /* Atur lebar maksimum konten */
+  width: 100%;
+  margin-top: 80px;
+}
+
+.main h2 {
+  font-size: 80px;
+  color: #000000;
+}
+
+.main p.tulisan {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.sub-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 15px 50px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: background-color 0.3s;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 600px; /* Atur lebar maksimum konten */
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .main h2 {
+    font-size: 60px;
+    color: #000000;
+    padding-right: 50px;
+    padding-left: 20px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 600px; /* Atur lebar maksimum konten */
+    width: 100%;
+    margin-top: 130px;
+  }
+
+  .main h2 {
+    font-size: 60px;
+    color: #000000;
+    padding-right: 50px;
+    padding-left: 10px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 600px; /* Atur lebar maksimum konten */
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .main h2 {
+    font-size: 60px;
+    color: #000000;
+    padding-right: 30px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 600px; /* Atur lebar maksimum konten */
+    width: 100%;
+    margin-top: 140px;
+  }
+
+  .main h2 {
+    font-size: 50px;
+    color: #000000;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 270px;
+    height: 30vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: gray;
+  }
+
+  .navbar a:active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 30vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 15px 0;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: gray;
+  }
+
+  .navbar a:active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 150px;
+  }
+
+  .main h2 {
+    font-size: 50px;
+    color: #000000;
+    margin-top: -10px;
+  }
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 30vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 15px 0;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: gray;
+  }
+
+  .navbar a:active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 150px;
+  }
+
+  .main h2 {
+    font-size: 40px;
+    color: #000000;
+    margin-top: -10px;
+  }
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 790px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 30vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 15px 0;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: gray;
+  }
+
+  .navbar a:active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 160px;
+  }
+
+  .main h2 {
+    font-size: 40px;
+    color: #000000;
+    margin-top: -20px;
+  }
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 160px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+    color: #000000;
+    margin-top: -20px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 40vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 15px 0;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+  }
+
+  .navbar a:hover {
+    color: gray;
+  }
+
+  .navbar a:active {
+    color: var(--text-color);
+  }
+
+  .navbar.open {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 48vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .user {
+    display: none;
+    align-items: center;
+  }
+
+  #register,
+  #login {
+    display: block;
+  }
+
+  .navbar.open {
+    right: 1%;
+  }
+  .user i {
+    color: var(--bg-color);
+    font-size: 28px;
+    margin-right: 7px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 160px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+    color: #000000;
+    margin-top: -20px;
+  }
+
+  h2 {
+    padding-top: 10px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dalam {
+    text-align: center;
+    max-width: 500px; /* Atur lebar maksimum konten */
+    width: 800%;
+    margin-top: 160px;
+  }
+
+  .main h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-top: -20px;
+  }
+
+  h2 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .main p.tulisan {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 35vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .user {
+    display: none;
+    align-items: center;
+  }
+
+  #register,
+  #login {
+    display: block;
+  }
+
+  .navbar.open {
+    right: 1%;
+  }
+  .user i {
+    color: var(--bg-color);
+    font-size: 28px;
+    margin-right: 7px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url(img/tanganbaru.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    width: 200px;
+    height: 45vh;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+  }
+
+  .user {
+    display: none;
+    align-items: center;
+  }
+
+  #register,
+  #login {
+    display: block;
+  }
+
+  .navbar.open {
+    right: 1%;
+  }
+  .user i {
+    color: var(--bg-color);
+    font-size: 28px;
+    margin-right: 7px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+}
