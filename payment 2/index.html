@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Team Section</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-logo__wrapper">
+        <img src="images/logo.png" alt="" class="navbar-logo" />
+        <h1 class="navbar-logo__label">TomsBray</h1>
+      </div>
+
+      <ul class="navbar-menu__list">
+        <li class="navbar-menu__item">About Us</li>
+        <li class="navbar-menu__item">Article</li>
+        <li class="navbar-menu__item">Fundraising</li>
+      </ul>
+
+      <ul class="navbar-auth__user">
+        <li class="navbar-user__item">
+          <div class="navbar-user__image-wrapper">
+            <img class="navbar-user__image" src="images/user-auth.svg" alt="" />
+          </div>
+        </li>
+        <li class="navbar-user__item">Abdull</li>
+      </ul>
+    </nav>
+    <!-- main section -->
+    <section>
+      <div class="main-contents">
+        <h1 class="main-title">Payment Details</h1>
+
+        <div class="payment-cards__container">
+          <div class="payment-left__card">
+            <img class="backdrop-donation" src="images/Gambar_1.png" alt="" />
+
+            <p class="total-donation">Total Donation</p>
+            <div class="button-option_donation">
+              <div class="button-donation">
+                <input
+                  type="radio"
+                  id="once"
+                  name="fav_language"
+                  value="once"
+                />
+                <label for="once">Once</label><br />
+              </div>
+
+              <div class="button-donation">
+                <input
+                  type="radio"
+                  id="monthly"
+                  name="fav_language"
+                  value="monthly"
+                />
+                <label for="monthly">Monthly</label>
+              </div>
+            </div>
+
+            <div class="input-donation__wrapper">
+              <input
+                class="input-donation__item"
+                type="text"
+                placeholder="Description"
+              />
+              <input
+                class="input-donation__item"
+                type="number"
+                placeholder="IDR 10,000"
+              />
+            </div>
+
+            <div class="donation-summary">
+              <ul class="left-summary__description">
+                <li class="summary-description__item">Sub total</li>
+                <li class="summary-description__item">Total GST:</li>
+                <li class="summary-description__item">
+                  Credit card fee (if using):
+                </li>
+                <li id="summary-last__space" class="summary-description__item">
+                  Amount due on 14 March 2024:
+                </li>
+              </ul>
+
+              <ul class="right-summary__value">
+                <li class="summary-value__item">IDR 10,000.00</li>
+                <li class="summary-value__item">IDR 0.00</li>
+                <li class="summary-value__item">IDR 0.00</li>
+                <li id="summary-last__space" class="summary-value__item">
+                  IDR 10,000.00
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="payment-right__card">
+            <div class="payment-card__top">
+              <h3 class="payment-right__subtitle">Payment Type</h3>
+
+              <div class="button-payment-option__wrapper">
+                <button class="button-payment__item">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/PayPal.svg"
+                    alt=""
+                  /></button
+                ><button class="button-payment__item">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/Indonesia.svg"
+                    alt=""
+                  /></button
+                ><button class="button-payment__item">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/Mastercard.svg"
+                    alt=""
+                  /></button
+                ><button class="button-payment__item">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/visa-logo.svg"
+                    alt=""
+                  />
+                </button>
+                <button class="button-payment__item">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/dana.svg"
+                    alt=""
+                  />
+                </button>
+
+                <button class="button-payment__group">
+                  <img
+                    class="payment-image__item"
+                    src="images/payments-logo/Group 79.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="payment-card__bottom">
+              <h3 class="card-button_subtitle">Card Detail</h3>
+
+              <div class="card-bottom__first-wrapper">
+                <div class="card-bottom__input-wrapper">
+                  <label class="card-bottom__label-input" for="card-holder_name"
+                    >Card holder name</label
+                  >
+                  <input
+                    placeholder="Ex. Abdull"
+                    class="card-bottom__input"
+                    type="text"
+                    id="card-holder_name"
+                    name="card-holder_name"
+                  />
+                </div>
+                <div class="card-bottom__image-select-wrapper">
+                  <img
+                    class="card-bottom__image"
+                    src="images/bottom-paypal-logo.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="card-bottom__first-wrapper">
+                <div class="card-bottom__input-wrapper">
+                  <label class="card-bottom__label-input" for="country"
+                    >Billing address</label
+                  >
+                  <select
+                    name="country"
+                    id="country"
+                    class="card-bottom__input"
+                  >
+                    <option value="volvo">Indonesia</option>
+                    <option value="saab">Inggris</option>
+                    <option value="opel">German</option>
+                    <option value="audi">Malaysia</option>
+                  </select>
+                </div>
+                <div class="card-bottom__input-wrapper">
+                  <label class="card-bottom__label-input" for="zipcode"
+                    >Zip code</label
+                  >
+                  <input
+                    placeholder="Ex. 73923"
+                    class="card-bottom__input"
+                    type="text"
+                    id="zipcode"
+                    name="zipcode"
+                  />
+                </div>
+
+                <div class="card-bottom__input-wrapper">
+                  <label class="card-bottom__label-input" for="city"
+                    >City</label
+                  >
+                  <input
+                    placeholder="Ex. Jakarta"
+                    class="card-bottom__input"
+                    type="text"
+                    id="city"
+                    name="city"
+                  />
+                </div>
+              </div>
+
+              <div class="card-bottom__second-wrapper">
+                <input
+                  type="checkbox"
+                  id="cek-validated"
+                  name="cek-validated"
+                  value="Bike"
+                />
+                <label class="bottom-validated" for="cek-validated"
+                  >By donating you are agreeing to our
+                  <span class="bottom-color">Privacy Policy</span> and
+                  <span class="bottom-color">Terms of Use.</span></label
+                >
+              </div>
+
+              <button class="proccess-donation__payment">
+                Proceed Payment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left__container">
+          <div class="footer-logo__wrapper">
+            <img class="footer-image" src="images/logo.png" alt="" />
+            <h1 class="footer-logo__label">TomsBray</h1>
+          </div>
+          <div class="footer-social__wrapper">
+            <img
+              class="footer-social__icon"
+              src="images/social-icons/1.svg"
+              alt=""
+            />
+            <img
+              class="footer-social__icon"
+              src="images/social-icons/2.svg"
+              alt=""
+            />
+            <img
+              class="footer-social__icon"
+              src="images/social-icons/3.svg"
+              alt=""
+            />
+            <img
+              class="footer-social__icon"
+              src="images/social-icons/4.svg"
+              alt=""
+            />
+          </div>
+          <p class="footer-left__description">
+            Care about people to transforming their lives and exudes a positives
+            Impressiono believe. fundraising NGO organizations.
+          </p>
+        </div>
+        <div class="middle-container">
+          <p class="footer-sub__title">Get Involved</p>
+          <ul class="footer-menu">
+            <li class="footer-menu__item">About Us</li>
+            <li class="footer-menu__item">Fundraiser</li>
+            <li class="footer-menu__item">Projects</li>
+            <li class="footer-menu__item">Team</li>
+          </ul>
+        </div>
+        <div class="middle-container">
+          <p class="footer-sub__title">Learn More</p>
+          <ul class="footer-menu">
+            <li class="footer-menu__item">Articles</li>
+            <li class="footer-menu__item">Blog</li>
+            <li class="footer-menu__item">FAQs</li>
+          </ul>
+        </div>
+        <div class="right-container">
+          <p class="footer-sub__title">Contact</p>
+          <p class="footer-contact__address">12160 - Jakarta, Indonesia</p>
+          <p class="footer-contact__telpon">kenny@gmail.com +7-843-672-431</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
