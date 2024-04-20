@@ -1,0 +1,63 @@
+#header-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#header-root .header-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+#header-root .header-wrapper .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header-root .header-wrapper .brand .brand-image {
+  width: 70px;
+}
+@media screen and (min-width: 768px) {
+  #header-root .header-wrapper .brand .brand-image {
+    width: 106px;
+  }
+}
+#header-root .header-wrapper .brand .brand-title {
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  #header-root .header-wrapper .brand .brand-title {
+    font-size: 36px;
+  }
+}
+#header-root .header-wrapper .navigations {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  #header-root .header-wrapper .navigations {
+    display: flex;
+  }
+}
+#header-root .header-wrapper .navigations li a {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+}
+#header-root .header-wrapper .navigations li a.active {
+  color: #000000;
+}
+#header-root .header-wrapper .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/*# sourceMappingURL=header.css.map */

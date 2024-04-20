@@ -1,0 +1,93 @@
+#footer-root {
+  width: 100%;
+  background-color: #DDE1F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-root .footer-wrapper {
+  width: 100%;
+  padding: 56px 8px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #footer-root .footer-wrapper {
+    flex-direction: row;
+  }
+}
+#footer-root .footer-wrapper .information {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  align-items: start;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #footer-root .footer-wrapper .information {
+    width: 40%;
+  }
+}
+#footer-root .footer-wrapper .information .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+#footer-root .footer-wrapper .information .brand .brand-image {
+  width: 80px;
+}
+#footer-root .footer-wrapper .information .brand .brand-title {
+  font-size: 24px;
+}
+#footer-root .footer-wrapper .information .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+#footer-root .footer-wrapper .information .socials img {
+  width: 44px;
+}
+#footer-root .footer-wrapper .information .description {
+  width: 80%;
+}
+#footer-root .footer-wrapper .footer-features {
+  width: 60%;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #footer-root .footer-wrapper .footer-features {
+    flex-direction: row;
+  }
+}
+#footer-root .footer-wrapper .footer-features > .feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 12px;
+  align-items: start;
+}
+#footer-root .footer-wrapper .footer-features > .feature .feature-options {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+}
+#footer-root .footer-wrapper .footer-features > .feature .feature-options .option a {
+  color: #000000;
+  font-size: 18px;
+}
+#footer-root .footer-wrapper .footer-features > .feature .feature-options .option.active a {
+  color: #4B7DF3;
+}
+
+/*# sourceMappingURL=footer.css.map */
